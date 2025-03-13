@@ -1,7 +1,7 @@
 # Bitcoin Closing Price Analysis
 
 ## Project Overview  
-This project is designed to practice **data analytics skills** using Python. It focuses on **extracting, cleaning, visualizing, and interpreting** Bitcoin closing price data over a 5-year period (2020-2025). The goal is to analyze trends, identify patterns, and provide meaningful insights that could guide investment decisions or strategic planning.  
+This project is designed to practice **data analytics skills** using Python and Tableau. I **extract, clean, visualize, and interpret** Bitcoin closing price data over a 5-year period (2020-2025). Many parts of the code include micro manipulations with detailed comment explanations to practice manipulating data and working in python. The overall goal is to gain familarity with basic python needed to: import/export data, analyze trends, identify patterns, and provide meaningful insights that could guide investment decisions or strategic planning.  
 
 ## Guiding Data Question  
 **"How have Bitcoin closing prices fluctuated over the last 5 years, and what insights can we draw about its long-term trend and volatility?"**  
@@ -17,21 +17,25 @@ This project is designed to practice **data analytics skills** using Python. It 
 
 3. **Exploratory Data Analysis (EDA)**:  
    - Descriptive statistics (mean, median, standard deviation).  
-   - Time-series visualization of closing prices.  
-   - Rolling averages to smooth out short-term fluctuations.  
+   - Time-series visualization of closing prices using matplotlib and seaborn library.  
 
-4. **Visualizations**:  
-   - Line charts showing Bitcoin’s price trends over 5 years.  
-   - Moving average overlays to identify bullish/bearish trends.  
-   - Volatility analysis through standard deviation plots.  
+4. **Analyzing Monthly & Yearly Trends**:  
+   - Manipulate data in order to fit desired chart parameters  
+   - Average closing price by month over all years 2020-2025  
 
 5. **Findings & Interpretations**:  
-   - Long-term patterns and whether Bitcoin follows cyclical trends.  
-   - Significant price surges or drops and possible external factors influencing them.  
-   - Variability and risk assessment.  
+   General:
+   - shows continued price increase over 5 years
+   - High volatility
+     
+   Specific:
+   - in many years, theres steady 3 month increase from Jan, and the year end close price was higher
+   - 2025 is peculiar and significantly higher then previous years    
 
-## Potential Actions & Recommendations  
-If this analysis were conducted for a **hypothetical investor or financial analyst**, possible recommendations could include:  
+## Potential Actions & Recommendations
+Possible recommendations could include:  
+- Beginning of the year is a decent time to buy
+- Expected growth if purchased early or held throughtout the year
 - **For Long-Term Investors:**  
   - If the data shows a consistent upward trend, **holding Bitcoin long-term** might be a good strategy.  
   - If volatility is extreme, consider **diversifying investments** rather than going all-in on BTC.  
@@ -39,11 +43,7 @@ If this analysis were conducted for a **hypothetical investor or financial analy
 - **For Short-Term Traders:**  
   - Identify recurring price patterns and **trade during high volatility periods** for profit.  
   - Use **moving averages and price trends** to determine optimal entry and exit points.  
-
-- **For Risk Management:**  
-  - If Bitcoin’s price history shows large drawdowns, investors should **set stop-loss limits** to manage risks.  
-  - Consider **hedging strategies** like stablecoins or other assets to mitigate losses.  
-
+ 
 ## Tools & Libraries Used  
 - `pandas` (Data manipulation)  
 - `yfinance` (Fetching financial data)  
@@ -51,6 +51,8 @@ If this analysis were conducted for a **hypothetical investor or financial analy
 - `numpy` (Numerical analysis)  
 
 ## Future Improvements  
+- Larger data set inclduing longer time span
+- deeper analysis on other common metrics such as moving averages, rolling averages, etc.
 - Expand the analysis by **including other cryptocurrencies** to compare Bitcoin’s performance.  
 - Use **machine learning models** to predict future Bitcoin prices.  
 - Incorporate **macroeconomic indicators** (inflation, stock market trends) to explain Bitcoin’s price movement.  
